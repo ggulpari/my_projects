@@ -1,0 +1,15 @@
+<script>
+    var minuti = 3;
+    var stoimost_minuti = 1.84;
+    var denNedeli = prompt("Введите день недели в виде цифры");
+    var skidka = minuti * stoimost_minuti - (((minuti * stoimost_minuti) / 100) * 20);
+    var bezskidkis = minuti * stoimost_minuti;
+
+    if (denNedeli > 5) {
+        document.write(" Предоставляется скидка в 20% <br>")
+        document.write("Стоимость разговора " + skidka + "рубей");
+    } else {
+        document.write("Стоимость разговора " + bezskidkis + "рубей");
+
+    }  
+</script>
