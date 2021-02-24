@@ -1,0 +1,16 @@
+<script>
+    var vrema_goda = prompt("Введите номер месяца (от 1 до 12)");
+
+    if (vrema_goda <= 2 || vrema_goda == 12) {
+        document.write("Зима");
+    } else if (vrema_goda <= 5) {
+        document.write("Весна");
+    } else if (vrema_goda <= 8) {
+        document.write("Лето");
+    } else if (vrema_goda <= 11) {
+        document.write("Осень");
+    } else {
+        document.write("Ошибка ввода данных.")
+    }
+
+</script>
